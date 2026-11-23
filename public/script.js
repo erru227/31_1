@@ -33,7 +33,7 @@ function CourseList() {
 }
 
 let Blist = buttons.map(but =>
-               <button onclick={but.funct}>{but.title}</button>
+               <button key={but.num} onClick={but.funct}>{but.title}</button>
             );
 
 let page = <>
