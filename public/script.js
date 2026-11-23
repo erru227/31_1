@@ -16,3 +16,4 @@ function CourseList() {
       </ol>
    );
 }
+root.render(<CourseList/>);
