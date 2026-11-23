@@ -12,13 +12,16 @@ const lessons = [
 ];
 
 function cat_pic(){
-   return <img src="cat.jpg"></img>
+   let new_code = <img src="cat.jpg"></img>
+   root.render(<>{page} <br></br> {new_code}</>);
 }
 function cld_pic(){
-   return <img src="cloud.jpg"></img>
+   let new_code = <img src="cloud.jpg"></img>
+   root.render(<>{page} <br></br> {new_code}</>);
 }
 function flw_pic(){
-   return <img src="flower.jpg"></img>
+   let new_code = <img src="flower.jpg"></img>;
+   root.render(<>{page} <br></br> {new_code}</>);
 }
 
 function CourseList() {
