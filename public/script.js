@@ -32,9 +32,11 @@ function CourseList() {
    );
 }
 
-let Blist = buttons.map(but =>
-               <button key={but.num} onClick={but.funct}>{but.title}</button>
-            );
+function Blist(){
+   return (buttons.map(but =>
+      <button key={but.num} onClick={but.funct}>{but.title}</button>
+   ));
+}
 
 let page = <>
    <CourseList/>
