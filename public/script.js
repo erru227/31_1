@@ -31,4 +31,14 @@ function CourseList() {
       </ol>
    );
 }
-root.render(<CourseList/>);
+
+let Blist = buttons.map(but =>
+               <button onclick={but.funct}>{but.title}</button>
+            );
+
+let page = <>
+   <CourseList/>
+   <br />
+   <Blist/>
+</>;
+root.render(page);
